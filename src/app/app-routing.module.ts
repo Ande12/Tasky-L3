@@ -4,6 +4,7 @@ import { MainComponent } from './main/main.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SigninComponent } from './Auth/signin/signin.component';
 import { SignupComponent } from './Auth/signup/signup.component';
+import { TaskComponent } from './task/task.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'signup',
     component: SignupComponent
+   },
+   {
+    path: 'task',
+    component: TaskComponent
    },
   {
     path: '',

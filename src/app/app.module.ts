@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavComponent } from './navigate/nav/nav.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FormsModule } from '@angular/forms';
+import { TaskComponent } from './task/task.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     MainComponent,
     FooterComponent,
     NavComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,
