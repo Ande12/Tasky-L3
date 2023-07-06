@@ -76,12 +76,12 @@
             <p>Start Date: {{item.startDate}}</p>
             <p>Due Date: {{item.dueDate}}</p>
             <div class="buttons">
-                <button mat-icon-button color="primary" (click)="editTask(item.id)">
+                <div mat-icon-button color="primary" (click)="editTask(item.id)" style="color: blue;">
                    <mat-icon>edit</mat-icon> 
-                </button>
-                <button mat-icon-button color="warn" (click)="deleteTask(item.id)">
+                </div>
+                <div mat-icon-button color="warn" (click)="deleteTask(item.id)" style="color: red;">
                     <mat-icon>delete</mat-icon> 
-                </button>
+                </div>
             </div>
         </div>
     </div>
