@@ -1,7 +1,46 @@
-<app-nav></app-nav>
-<form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)" action="" method="post">
-    <input type="text" name="email" ngModel placeholder="Please enter email">
-    <input type="password" name="password" ngModel placeholder="Please enter Password">
-    <button routerLink="/signup"> Register</button>
-    <button type="submit">Login</button>
-</form>
+<body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <form class="login">
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="email" class="login__input" [(ngModel)]="User.email" name="email"
+                            placeholder="User Email">
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input type="password" class="login__input" [(ngModel)]="User.password" name="password"
+                            placeholder="Password">
+                    </div>
+                    <button class="button login__submit" style="display: flex; justify-content: space-around;" >
+                       <span> Not yet a user?</span>
+                       <span routerLink="/signup"> sign up</span>
+                    </button>
+                    <button class="button login__submit" (click)="submit($event,User)">
+                        <span class="button__text">Log In Now</span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>
+                </form>
+                <div class="social-login">
+                    <h3>log in via</h3>
+                    <div class="social-icons">
+                        <span class="social-login__icon fab fa-google" (click)="googleSignIn($event)"></span>
+                        <span class="social-login__icon fab fa-facebook"></span>
+                        <span class="social-login__icon fab fa-twitter"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>
+        </div>
+    </div>
+</body>
