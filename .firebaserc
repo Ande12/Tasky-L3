@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tasky-l3": {
+      "hosting": {
+        "Tasky": [
+          "tasky-l3"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tasky-l3"
+  }
+}
