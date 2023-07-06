@@ -13,7 +13,7 @@ export class AuthenticationService {
   facebookProvider = new FacebookAuthProvider();
   constructor(private auth: Auth, private route: Router, private localStore: LocalstorageService) { }
   actionCodeSettings = {
-    url: "http://localhost:4200/",
+    url: "https://tasky-l3.web.app/main",
     handleCodeInApp: true,
   };
   signIn(user: IUser) {

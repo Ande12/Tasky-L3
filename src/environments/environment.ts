@@ -7,6 +7,7 @@ export const environment = {
     authDomain: 'tasky-l3.firebaseapp.com',
     messagingSenderId: '175539967686',
     measurementId: 'G-8Y6Z32NZDY',
+    FIREBASE_TOKEN:'1//03Uvue3AMpRVJCgYIARAAGAMSNwF-L9IridZxAdXio0ovNkAKKJePdhUIqg7chi35Ps0e4iNwsbrLBGWo8D6S4PqlHGxy4qXpmNA'
   },
   production: false
 };
