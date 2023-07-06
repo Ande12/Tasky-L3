@@ -66,4 +66,23 @@
             </div>
         </div>
     </div>
+    <div class="context">
+        <div *ngFor="let i = index; let item of data" class="view-task">
+            <p class="head">Task Number: {{i+1}}</p>
+            <p>Task Name: {{item.taskName | titlecase}}</p>
+            <p>Status: {{item.status | titlecase}}</p>
+            <p>Difficulty: {{item.difficulty | titlecase}}</p>
+            <p>Level: {{item.level | titlecase}}</p>
+            <p>Start Date: {{item.startDate}}</p>
+            <p>Due Date: {{item.dueDate}}</p>
+            <div class="buttons">
+                <button mat-icon-button color="primary" (click)="editTask(item.id)">
+                   <mat-icon>edit</mat-icon> 
+                </button>
+                <button mat-icon-button color="warn" (click)="deleteTask(item.id)">
+                    <mat-icon>delete</mat-icon> 
+                </button>
+            </div>
+        </div>
+    </div>
 </div>

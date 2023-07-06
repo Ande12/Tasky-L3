@@ -15,6 +15,9 @@ import { NavComponent } from './navigate/nav/nav.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FormsModule } from '@angular/forms';
 import { TaskComponent } from './task/task.component';
+import {MatIconModule} from '@angular/material/icon';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -30,10 +33,12 @@ import { TaskComponent } from './task/task.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatIconModule,
     FormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
-    provideFirestore(() => getFirestore())
+    provideFirestore(() => getFirestore()),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

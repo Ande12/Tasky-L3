@@ -22,7 +22,7 @@
     background: linear-gradient( white);
     border-radius: 8px;
     box-shadow: 1px 2px 4px 2px rgb(75, 0, 128);
-    margin: 2% auto;
+    margin: 1% auto;
     // color: white;
 
     
@@ -121,13 +121,14 @@
         height: inherit;
         margin-top: 20px;
        .view-task{
-           width: 250px;
-           height: 300px;
-           border-radius: 8px;
-           box-shadow: 1px 2px 4px 2px rgb(158, 158, 158);
-           margin-left: 20px;
-           font-size: 17px;
-           text-align: center;
+        width: 250px;
+        height: 300px;
+        border-radius: 8px;
+        box-shadow: 1px 2px 4px 2px rgb(158, 158, 158);
+        margin-left: 20px;
+        font-size: 17px;
+        text-align: left;
+           line-height: 30px;
 
            .head{
             padding-top: 20px;
